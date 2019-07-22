@@ -1,0 +1,692 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+	vertical-align: top;
+    width: 100%; 
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url(../fonts/PTSans-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url(../fonts/PTSans-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}	
+
+@font-face {
+	font-family: "Cormorant Infant";
+	src: url(../fonts/CormorantInfant-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}	
+
+@font-face {
+	font-family: "Cormorant Infant";
+	src: url(../fonts/CormorantInfant-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}	
+
+body{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    background-image: url(../img/bg.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.header {
+    width: 100%;
+    background: #fff;
+}
+
+.header_wrapper {
+    padding-top: 35px;
+}
+
+.name_church {
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #262626;
+
+}
+
+.about_church {
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #595959;
+    margin-bottom: 40px;
+}
+
+.main_menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6;
+}
+
+.main_menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+}
+
+.main_menu__link:hover {
+    color: #48974c;   
+}
+
+
+/* ==== Slider ==== */
+
+
+.slider__item {
+    position: relative;
+}
+
+.slider__item {
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider__item_wrapper {
+    padding-top: 77px;
+    position: relative;
+    width: 100%;
+}
+
+.slider__item_inform {
+    max-width: 550px;
+    padding: 33px 35px 42px 42px;
+    opacity: 0.9;
+    background-color: #f3f3f3;
+    color: #404040;
+}
+
+.slider__item_inform h2 {
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;  
+}
+
+.slider__item_inform p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* ==== Content ==== */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.content__item {
+    max-width: 555px;
+    margin-top: 30px;
+}
+
+.content__item:last-child{
+    margin-right: 0;
+}
+
+.content__item_full {
+    padding: 25px 25px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.content__item_full:last-child {
+    margin-bottom: 0;
+}
+
+.content__item_full_img {
+    max-width: 505px;
+    margin-bottom: 15px;
+}
+
+.content__item_full_time {
+    display: block;
+    font-size: 14px;
+    color: #a6a6a6;
+    margin-left: 30px;
+    position: relative;
+}
+
+.content__item_full_time:before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -27px;
+    top: 4px;
+    background: url(../img/icon-time.png) no-repeat;
+    background-position: center;
+}
+
+.content__item_full_caption {
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.content__item_full_text {
+    color: #737373;
+}
+
+.content__item_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 23px;
+}
+
+.content__item_navigation_more {
+    width: 155px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #48974c;
+}
+
+.content__item_navigation_more a {
+    font-weight: bold;
+    color: #48974c;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.content__item_social_list {
+    list-style: none;
+    display: flex;
+
+}
+
+.content__item_social_item {
+    width: 25px;
+    margin-left: 10px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.content__item_social_link .fab {
+    color: #ccc;
+}
+
+.content__item_social_link .fab:hover {
+    color: #48974c;
+}
+
+.content__item_earlier {
+    margin: 25px 0 0 25px;
+    width: 155px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #48974c;  
+}
+
+.content__item_earlier_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.content__item_earlier_link:before,
+.content__item_earlier_link:after { 
+    content: "";
+    display: block;
+    width: 7px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    transform: rotate(45deg);
+}
+
+.content__item_earlier_link:after {
+    top: 32px;
+    transform: rotate(-45deg) translateY(1px) translateX(-1px);
+}
+
+.content__half_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content__item_half {
+    max-width: 277px;
+    padding: 25px 22px 15px 24px;
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+.content__item_half:first-child,
+.content__item_half:nth-child(2) {
+    border-top: none;
+}
+
+.content__item_half:nth-child(even) {
+    border-right: none;
+}
+
+.content__item_half_img {
+    max-width: 225px;
+    height: 148px;
+    margin-bottom: 15px;
+}
+
+.content__item_half_caption {
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #262626;
+    margin-bottom: 12px;
+}
+
+.content__item_half_text {
+    color: #737373;
+    margin-bottom: 9px;
+}
+
+.content__item_half_more {
+    display: block;
+}
+
+.content__item_half_link {
+    position: relative;
+    font-size: 12px;
+    color: #48974c;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.content__item_half_link:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/more-decor.png) no-repeat center;
+}
+
+.pagination_wrapper {
+    margin-top: 30px;
+}
+
+.pagination__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.pagination__item {
+    margin-left: 10px;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.pagination__item:first-child {
+    margin-left: 0;
+}
+
+.pagination__item:hover  {
+    background-color: #449653;
+}
+
+.pagination__item:nth-child(6) {
+    width: 20px;
+    background: none;
+}
+
+.pagination__link {
+    line-height: 22px;
+    padding: 22px 22px;
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination__link:hover {
+    color: #fff;
+}
+
+.pagination__list .clear {
+    width: 30px;
+    background: none;
+} 
+
+.clear .pagination__link:hover {
+    color: #ccc;
+}
+
+/* ==== Banner ==== */
+
+.banner {
+    margin-top: 70px;
+}
+
+.banner__wrapper {
+    height: 560px;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.banner__inform_wrapper {
+   height: 100%;
+   position: relative;
+}
+
+.banner__inform {
+    max-width: 350px;
+    display: flex;
+    position: absolute;
+    left: 25px;
+    bottom: 70px;
+}
+
+.banner__inform_text {
+    width: 220px;
+    padding: 16px 18px;
+    font-size: 18px;
+    background: #fff;
+    color: #262626;
+}
+
+.banner__inform_more {
+    width: 147px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #48974c;
+}
+
+.banner__inform_more a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding: 18px 18px;
+}
+
+/* ==== Information ==== */
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.information_facebook {
+    background: #fff;
+    padding: 29px 35px 35px;
+    max-width: 358px;
+}
+
+.information_facebook h3{
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #262626;
+    margin-bottom: 17px;
+}   
+
+.information_banner {
+    width: 746px;
+    height: 261px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information_banner {
+    font-family: 'Cormorant Infant', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    color: #262626;
+}
+
+
+/* ==== Footer ==== */
+
+.footer {
+    background: #404040;
+    margin-top: 70px;
+}
+
+.footer_wrapper {
+    padding-top: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_name {
+    max-width: 430px;
+}
+
+.footer_name .name_church {
+    line-height: 44px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.footer_name .about_church {
+    color: #fff;
+    text-align: left;
+}
+
+.footer_menu {
+    max-width: 210px;
+}
+
+.footer_menu .main_menu {
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.footer_menu .main_menu__link {
+    line-height: 35px;
+    color: #fff;
+}
+
+.footer_menu .main_menu__link:hover {
+    color: #48974c;
+}
+
+.footer_social {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 8px;
+}
+
+.footer_social_list {
+    list-style: none;
+    display: flex;
+
+}
+
+.footer_social__item {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+.footer_social__link .fab {
+    color: #ccc;
+}
+
+.footer_social__link .fab:hover {
+    color: #48974c;
+}
+
+.footer_social_count {
+    width: 88px;
+    height: 31px;
+    background: url(../img/count.jpg) no-repeat center;
+    margin-top: 35px;
+}
+
+.footer_copyright {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+    margin-top: 50px;
+    padding: 14px 18px;
+    border-top: 1px solid #808080;
+}
+
+@media all and (max-width: 1024px) {
+
+    /* ==== Content ==== */
+
+    .content {
+        justify-content: space-around;
+    }
+
+    /* ==== Inforamtion ==== */
+
+    .information {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information_banner {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 768px) { 
+
+    /* ==== Header ==== */
+
+    .main_menu {
+        justify-content: space-around;
+    }
+
+    .main_menu__item {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+
+    /* ==== Inforamtion ==== */
+
+
+    .information_banner {
+        width: 450px;
+    }
+}
+
+@media all and (max-width: 576px) {
+
+    /* ==== Content ==== */
+
+    .content__half_wrapper {
+        justify-content: space-around;
+    }
+
+    /* ==== Inforamtion ==== */
+
+
+    .information_banner {
+        width: 400px;
+    }
+
+    /* ==== Footer ==== */
+
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_name .name_church {
+        text-align: center;
+    }
+
+    .footer_name .about_church {
+        text-align: center;
+    }
+
+    .footer_menu .main_menu {
+        align-items: center;
+    }
+
+    .footer_social {
+        align-items: center;
+    }
+}

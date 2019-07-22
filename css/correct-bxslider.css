@@ -1,0 +1,49 @@
+.bx-viewport {
+    height: 100% !important;
+}
+.bx-wrapper {
+    border: none;
+    margin-bottom: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background-color: #ccc;
+}
+
+.bx-wrapper .bx-pager {
+    bottom: 18%;
+    left: -500px;
+}
+
+
+@media all and (max-width: 1024px) { 
+    .bx-wrapper .bx-pager {
+        bottom: 18%;
+        left: -350px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .bx-wrapper .bx-pager {
+        bottom: 18%;
+        left: -250px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .bx-wrapper .bx-pager {
+        bottom: 18%;
+        left: -150px;
+    }
+}
