@@ -502,15 +502,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.information_banner {
     font-family: 'Cormorant Infant', 'Times New Roman', serif;
     font-style: italic;
     font-weight: bold;
     font-size: 24px;
     color: #262626;
 }
+
 
 
 /* ==== Footer ==== */
@@ -610,6 +608,15 @@ body{
     border-top: 1px solid #808080;
 }
 
+@media all and (max-width: 1200px) {
+
+     /* ==== Inforamtion ==== */
+
+     .information_banner {
+        width: 635px;
+    }
+}
+
 @media all and (max-width: 1024px) {
 
     /* ==== Content ==== */
@@ -659,12 +666,34 @@ body{
     .content__half_wrapper {
         justify-content: space-around;
     }
+    
+    .pagination__item {
+        margin-top: 5px;
+    }
+
+    /* ==== Banner ==== */
+    .banner__inform_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner__inform {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    .banner__inform_text {
+        width: 140px;
+        text-align: center;
+    }
 
     /* ==== Inforamtion ==== */
 
 
     .information_banner {
-        width: 400px;
+        width: 320px;
     }
 
     /* ==== Footer ==== */
@@ -686,7 +715,23 @@ body{
         align-items: center;
     }
 
+    .footer_menu .main_menu .main_menu__item {
+        margin-left: 0;
+    }
+
     .footer_social {
         align-items: center;
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    
+
+    /* ==== Information ==== */
+
+
+    .information_banner {
+        width: 220px;
     }
 }
